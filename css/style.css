@@ -2,7 +2,6 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 .main{
-    /*background: #000 url("../img/main-bg.jpg") no-repeat center center;*/
     height: 100vh;
     text-align: center;
     display: flex;
