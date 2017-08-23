@@ -38,6 +38,8 @@ body{
 }
 .main__overlay{
     position: absolute;
+    left: 0;
+    right: 0;
     height: 100%;
     width: 100%;
     background-color: rgba(0,0,0,.8);
@@ -73,7 +75,8 @@ body{
     text-transform: uppercase;
 }
 .portfolio img{
-    max-width: 100%;
+    width: 100%;
+    max-width: 250px;
     height: auto;
     box-shadow: 0 4px 29px 0 rgba(87, 92, 97, .54);
 }
@@ -97,7 +100,7 @@ body{
 
 footer{
     text-align: center;
-    background-color: #646464;
+    background-color: lightseagreen;
     color: #e4e4e4;
     padding: 40px 0;
     font-size: 22px;
@@ -190,6 +193,13 @@ footer{
     }
 }
 
+@media (min-width: 600px){
+    .portfolio img{
+        width: 300px;
+        height: 350px;
+        max-width: 400px;
+    }
+}
 /*modal new*/
 /*Main Content
 
