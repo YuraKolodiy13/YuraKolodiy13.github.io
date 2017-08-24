@@ -1,0 +1,182 @@
+body{
+    font-family:'Ubuntu',sans-serif;
+}
+header .logo{
+    padding-top:2.5%;
+}
+header .search-main{
+    padding-top:2%;
+}
+header input{
+    border: none;
+    width: 60px;
+    font-size:12px;
+    color: #000;
+}
+header ul{
+    margin:0;
+}
+header li{
+    display: inline-block;
+    margin-left: 5%;
+    padding: 4% 2%;
+    position: relative;
+}
+header a{
+    display:  block;
+    font-size:16px;
+    color: #000;
+}
+header .btn{
+    background-color: #f98561;
+    color: #fff;
+}
+header .current{
+    background:#12a3d6 url("../img/yourLogo-img/current2.png") no-repeat bottom;
+    color: #fff;
+}
+header li:hover{
+    background:#12a3d6;
+    color: #fff;
+}
+/*.arrow2{*/
+    /*width: 0;*/
+    /*height: 0;*/
+    /*border-left: 5px solid transparent;*/
+    /*border-right: 5px solid transparent;*/
+    /*border-bottom: 5px solid red;*/
+    /*position: absolute;*/
+    /*bottom: 10px;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*margin: 0 auto;*/
+/*}*/
+header .blog{
+    padding:2.9% 2%;
+}
+
+
+.slider button{
+    margin:5% 0 20%;
+    background-color: #f98561;
+    color: #ffebca;
+    font-size:25px;
+    padding: 5px 40px;
+}
+.slider h1{
+    font-size:40px;
+    text-transform: uppercase;
+    color: #cccece;
+}
+.slider h5{
+    color: #cccece;
+    font-size:14px;
+}
+.slider img{
+    width: 100%;
+}
+
+.services{
+    padding:3%;
+    background-color: #e8e7e5;
+    position: relative;
+}
+.services h2{
+    background-color: #2190c1;
+    display: inline-block;
+    position: absolute;
+    top:-10%;
+    left: 42%;
+    font-size:22px;
+    color:#fff;
+    padding:2px 30px;
+    border-radius: 5px;
+}
+.services a{
+    color: #3e9dd1;
+}
+
+.portfolio{
+    background-color: #2e3e4f;
+    padding:4% 0;
+}
+.portfolio h4{
+    font-size:30px;
+    color: #f98561;
+}
+.portfolio h5{
+    font-size:17px;
+    color: #f98561;
+}
+.portfolio p{
+    color:#bcbcbc;
+    font-size:11px;
+}
+.portfolio img{
+    margin:10% 0 3%;
+}
+.portfolio .btn{
+    background-color: #2190c1;
+    color:#fff;
+    float: right;
+}
+
+.offer{
+    background-color: #f4f4f4;
+    padding-top:2%;
+}
+.offer h2{
+    font-size:40px;
+    color:#2190c1;
+}
+.offer h6{
+    font-size:12px;
+    color:#515862;
+    margin:3% 0 5%;
+}
+.offer h4{
+    font-size:17px;
+    color: #2b99cc;
+}
+.offer p{
+    font-size:11px;
+    color:#515862;
+}
+.offer a.web{
+    background-color: #2190c1;
+    color:#fff;
+    padding:5px 10px;
+    border-radius: 5px;
+    float: right;
+    font-size:12px;
+}
+.offer a.online{
+    background-color: #2190c1;
+    color:#fff;
+    padding:5px 10px;
+    border-radius: 5px;
+    float: right;
+    font-size:12px;
+    border-bottom: 2px solid #025568;
+}
+.offer .line{
+    background: url("../img/yourLogo-img/line.png") repeat-x center center;
+    padding: 3% 0;
+}
+.offer h3{
+    font-size:27px;
+    color:#2190c1;
+    text-transform: uppercase;
+}
+.offer h5{
+    font-size:25px;
+    color:#515862;
+    margin:3% 0 5%;
+}
+.offer .jon{
+    font-size:14px;
+    color: #f98561;
+}
+.offer .jon span{
+    font-weight:bold;
+}

@@ -167,6 +167,10 @@ footer{
     color: #ffffff;
     text-decoration: none;
 }
+.modal-dialog{
+    width: 90%;
+    margin: auto;
+}
 
 /*media*/
 

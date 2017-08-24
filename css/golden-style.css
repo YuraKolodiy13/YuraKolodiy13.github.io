@@ -1,0 +1,340 @@
+html{
+    height: 100%;
+    font-size: 100%;
+}
+body{
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+}
+header{
+    background: url("../img/golden-img/bg.jpg") no-repeat;
+    background-size: cover;
+}
+header ul li{
+    display: inline-block;
+    margin-left: 40px;
+}
+header a{
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    color:#fff;
+}
+header a:hover{
+    color: #fed136;
+    text-decoration: none;
+}
+.h-row1{
+    padding-top: 50px;
+}
+.h-row2{
+    text-transform: uppercase;
+    color: #fff;
+}
+.h-row2 h2{
+    font-size: 40px;
+    margin-top: 205px;
+}
+.h-row2 h1{
+    font-size: 75px;
+}
+.h-row2 button{
+    text-transform: uppercase;
+    background-color: #fed136;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 160px;
+    padding: 15px 30px;
+}
+.h-row2 button:hover{
+    background-color: #c39c15;
+}
+.services h2{
+    margin-top: 100px;
+    text-transform: uppercase;
+    font: bold 40px Arial;
+}
+.services p{
+    color: #9e9e9e;
+    font-size: 16px;
+    margin-bottom: 75px;
+}
+.s-row h5{
+    margin-top: 20px;
+    font:bold 18px Arial;
+}
+.s-row p{
+    font-size: 18px;
+    margin-bottom: 100px;
+}
+.portfolio{
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 90px 0;
+}
+.portfolio h2{
+    font:bold 40px Arial;
+    color:#000000;
+    text-transform: uppercase;
+}
+.portfolio p{
+    font-size: 16px;
+    color: #9e9e9e;
+    margin-bottom: 55px;
+}
+.portfolio h5{
+    padding-top: 20px;
+    font:bold 18px Arial;
+    margin-bottom: 0;
+}
+.portfolio h6{
+    font-size: 14px;
+    color: #9e9e9e;
+    padding-bottom: 20px;
+    margin-top:5px;
+}
+.box{
+    margin-bottom: 50px;
+    background-color: #ffffff;
+}
+.about1{
+    text-align: right;
+    float: left;
+    width: 35%;
+}
+.about2{
+    text-align: center;
+    float: left;
+    width: 30%;
+    background: url(../img/golden-img/line.png)no-repeat;
+    background-position: center bottom;
+    height: 270px;
+    padding-top:0;
+    margin-top:0;
+}
+.about3{
+    float: right;
+    width: 35%;
+}
+.about4{
+    text-align: center;
+    float: right;
+    width: 30%;
+    background: url(../img/golden-img/line.png)repeat-y;
+    background-position: center bottom;
+    height: 270px;
+}
+.about5{
+    text-align: center;
+}
+.clear{
+    clear: both;
+}
+.about h2{
+    font: bold 40px Arial;
+    text-transform: uppercase;
+}
+.about p{
+    font: 16px "Times New Roman";
+    color: #838383;
+}
+.about h5{
+    text-transform: uppercase;
+    font:bold 18px Arial;
+}
+.about h6{
+    font:bold 18px Arial;
+}
+.a-row{
+    margin: 100px 0 70px 0;
+}
+.about{
+    padding-bottom: 100px;
+}
+.team{
+    background-color: #f9f9f9;
+    padding-bottom: 100px;
+}
+.team img{
+    margin-top: 60px;
+}
+.team h3, .contact h3{
+    font: bold 40px Arial;
+    text-transform: uppercase;
+}
+.team h5{
+    font: bold 16px Arial;
+}
+.team h6{
+    font: 14px Arial;
+    color: #838383;
+}
+.team p, .contact p{
+    font: 16px "Times New Roman";
+    color: #838383;
+}
+.social{
+    margin-top:10px;
+    margin-bottom: 30px;
+}
+.social a{
+    display: inline-block;
+    width:40px;
+    height: 40px;
+    margin:0 3px;
+    border: 3px solid #222;
+    border-radius: 50%;
+    background: url("../img/golden-img/social.png") no-repeat;
+}
+a.icon-tw{
+    background-position: 0 0;
+}
+a.icon-tw:hover{
+    background-color: #00aced;
+    background-position: 0 -40px;
+    border-color: #00aced;
+}
+a.icon-fb{
+    background-position: -40px 0;
+}
+a.icon-fb:hover{
+    background-color: #3b5998;
+    background-position: -40px -40px;
+    border-color: #3b5998;
+}
+a.icon-pn{
+    background-position: -80px 0;
+}
+a.icon-pn:hover{
+    background-color: #cb2028;
+    background-position: -80px -40px;
+    border-color: #cb2028;
+}
+a.icon-g{
+    background-position: -120px 0;
+}
+a.icon-g:hover{
+    background-color: #d95232;
+    background-position: -120px -40px;
+    border-color: #d95232;
+}
+.brand{
+    padding:60px 0;
+}
+.brand img{
+    vertical-align: middle;
+}
+.contact{
+    background: url("../img/golden-img/bg2.jpg") no-repeat center top;
+    background-size: cover;
+    padding:75px 0 100px 0;
+}
+.contact p{
+    font: 16px "Times New Roman";
+    color: #838383;
+}
+.contact h3{
+    font: bold 40px Arial;
+    text-transform: uppercase;
+    color: #fff;
+}
+.contact input{
+    padding:20px;
+    border-radius: 2px;
+    margin-bottom:13px;
+}
+.contact textarea{
+    padding:10px 20px;
+    border-radius: 2px;
+}
+.c-row{
+    margin-top:65px;
+}
+.contact .btn{
+    background-color: #fed136;
+    color: #fff;
+    font: 22px Arial;
+    text-transform: uppercase;
+    padding:15px 23px;
+    border:#fed136;
+    border-radius: 2px;
+}
+.contact .btn:hover{
+    background-color: #a1872c;
+}
+.social-foot{
+    margin-top:20px;
+}
+.social-foot a{
+    display: inline-block;
+    background: url("../img/golden-img/social.png") no-repeat;
+    border: 2px solid #222222;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right:5px;
+}
+textarea{
+    width: auto;
+}
+.social-foot a.icon-tw{
+    background-position: 0 -40px;
+    background-color: #222222;
+}
+.social-foot a.icon-tw:hover{
+    background-color: #00aced;
+    border-color: #00aced;
+}
+.social-foot a.icon-fb{
+    background-position: -40px -40px;
+    background-color: #222222;
+}
+.social-foot a.icon-fb:hover{
+    background-color: #3b5998;
+    border-color: #3b5998;
+}
+.social-foot a.icon-pn{
+    background-position: -80px -40px;
+    background-color: #222222;
+}
+.social-foot a.icon-pn:hover{
+    background-color: #cb2028;
+    border-color: #cb2028;
+}
+.social-foot a.icon-g{
+    background-color: #222222;
+    background-position: -120px -40px;
+}
+.social-foot a.icon-g:hover{
+    background-color: #d95232;
+    border-color: #d95232;
+}
+footer p{
+    font:14px Arial;
+    margin-top:30px;
+}
+footer{
+    padding-bottom: 20px;
+}
+textarea{
+    resize: none;
+}
+.img-responsive{
+    width: 100%;
+}
+
+
+/*@media (min-width:769px) and (max-width: 992px){
+    .portfolio img{
+        width: 100%;
+    }
+    .about img{
+        width: 50%;
+    }
+
+}
