@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Барбершоп "Бородинский"</title>
+    <link rel="icon" href="img/barbershopNew-img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/barbershopNew-style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+<header class="headerMain">
+    <div class="container flex">
+        <nav class="navMain">
+            <ul class="navMain__wrapper">
+                <li><a class="logoSmall"><img src="img/barbershopNew-img/logoSmall.png" alt=""></a></li>
+                <li><a href="">Информация</a></li>
+                <li><a href="">Новости</a></li>
+                <li><a href="barbershopNew-price.html">Прайс-лист</a></li>
+                <li><a href="barbershopNew-catalog.html">Магазин</a></li>
+                <li><a href="">КонтактЫ</a></li>
+                <li><a class="icon" href="javascript:void(0)" style="font-size: 15px">&#9776;</a></li>
+            </ul>
+        </nav>
+        <div class="userBlock">
+            <a href="" class="userBlock__login">Вход</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <div class="logo">
+            <a><img src="img/barbershopNew-img/logo.png" alt=""></a>
+        </div>
+        <section class="features">
+            <div class="features__item">
+                <b class="features__name">БЫстро</b>
+                <p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДЕТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
+            </div>
+            <div class="features__item">
+                <b class="features__name">КРУТО</b>
+                <p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.
+                    МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!
+                    ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.
+                </p>
+            </div>
+            <div class="features__item">
+                <b class="features__name">ДОРОГО</b>
+                <p>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
+            </div>
+        </section>
+
+        <div class="indexContent">
+            <div class="indexContent__left">
+                <h2 class="indexContent__title">НОВОСТИ</h2>
+                <ul class="indexContent__news">
+                    <li>
+                        <div class="indexContent__name">НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</div>
+                        <time datetime="2016-09-25">25 сентября</time>
+                    </li>
+                    <li>
+                        <div class="indexContent__name">В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДЕТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</div>
+                        <time datetime="2016-09-19">19 сентября</time>
+                    </li>
+                </ul>
+
+                <a href="" class="btn">ВСЕ НОВОСТИ</a>
+            </div>
+            <div class="indexContent__right">
+                <h2 class="indexContent__title">ФОТОГАЛЕРЕЯ</h2>
+                <div class="gallery">
+                    <figure class="gallery__content">
+                        <img src="img/barbershopNew-img/gallary1.jpg" alt="">
+                    </figure>
+                    <div class="gallery__btn">
+                        <button type="button" class="btn prev">Назад</button>
+                        <button type="button" class="btn next">Вперед</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="indexContent">
+            <div class="indexContent__left">
+                <h2 class="indexContent__title">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+                <p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+                    АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
+                    ТЕЛЕФОН: +7 (495) 666-02-66<br></p>
+
+                <p>ВРЕМЯ РАБОТЫ:<br>
+                    ПН — ПТ: С 10:00 ДО 22:00<br>
+                    СБ — ВС: С 10:00 ДО 19:00</p>
+                <a href="" class="btn showMap">Как проехать</a>
+                <a href="" class="btn">Обратная связь</a>
+            </div>
+            <div class="indexContent__right">
+                <h2 class="indexContent__title">ЗАПИСАТЬСЯ</h2>
+                <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+                <form action="#" class="indexContent__form" method="post">
+                    <label for="date">Дата
+                        <input type="text" name="date" value="" placeholder="08.10.2017" id="date">
+                    </label>
+                    <label for="time">Время
+                        <input type="text" name="time" value="" placeholder="10:00" id="time">
+                    </label>
+                    <label for="name">Ваше имя
+                        <input type="text" name="name" value="" placeholder="Борода" id="name">
+                    </label>
+                    <label for="tel">Телефон
+                        <input type="tel" name="phone" value="" placeholder="+7 123 456-78-90" id="tel">
+                    </label>
+                    <button type="submit" class="btn long">Отправить</button>
+                </form>
+            </div>
+            <div class="modal__maps">
+                <img src="img/barbershopNew-img/maps.jpg" alt="">
+                <button class="close">close</button>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__contacts">
+            <p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+                АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
+                <a href="">КАК НАС НАЙТИ?</a><br>
+                ТЕЛЕФОН: +7 (495) 666-02-66</p>
+        </div>
+        <div class="footer__social">
+            <p>ДАВАЙТЕ ДРУЖИТЬ!</p>
+            <div class="social">
+                <a href="" class="social__btn social__btn--vk">Вконтакте</a>
+                <a href="" class="social__btn social__btn--fb">Фуйсбук</a>
+                <a href="" class="social__btn social__btn--inst">Инстаграм</a>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p>Разработано:</p>
+            <a href="http://htmlacademy.ru" target="_blank" class="btn">HTMLACADEMY.RU</a>
+        </div>
+    </div>
+</footer>
+
+<div class="modal__popup">
+    <h2>ЛИЧНЫЙ КАБИНЕТ</h2>
+    <p>ВВедите пожалуйста свой логин и пароль</p>
+    <form action="#" method="post">
+        <input type="text" placeholder="ЛОГИН">
+        <input type="password" placeholder="ПАРОЛЬ">
+        <div class="modal__wrapper">
+            <label for="rememberMe"><input type="checkbox" id="rememberMe">ЗАПОМНИТЕ МЕНЯ</label>
+            <a href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
+        </div>
+        <button type="submit" class="btn long">ВОЙТИ</button>
+    </form>
+    <button class="close">close</button>
+</div>
+
+<script src="js/barbershopNew.js"></script>
+</body>
+</html>
