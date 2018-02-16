@@ -1,0 +1,806 @@
+body{
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+}
+.headerMain{
+    background-color: #000;
+}
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navMain__wrapper{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.navMain__wrapper{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.headerMain a{
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 25px 20px;
+}
+.headerMain a.active{
+    position: relative;
+}
+.headerMain a.active::after{
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+}
+.headerMain a.logoSmall{
+    padding: 21px 20px;
+}
+
+.headerMain a:hover{
+    background-color: #242424;
+}
+.headerMain .userBlock{
+    width: 110px;
+    text-align: right;
+    position: relative;
+}
+.headerMain .userBlock__login::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/barbershopNew-img/sprite.png") no-repeat;
+    position: absolute;
+    top: 22px;
+    background-position: -8px 0;
+}
+.headerMain .userBlock__login:hover::before{
+    opacity: .3;
+}
+.headerMain .icon{
+    display: none;
+}
+
+main{
+    background: url("../img/barbershopNew-img/bg.jpg") no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+.logo{
+    text-align: center;
+}
+.features{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.features__item{
+    width: 30%;
+}
+.features__name{
+    font-size: 30px;
+    line-height: 42px;
+    padding-bottom: 30px;
+    display: block;
+}
+.features__name::after{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #f7f4f1;
+    transform: rotate(45deg);
+    margin: 20px auto 0 auto;
+}
+.features p{
+    color: #f7f4f1;
+}
+.indexContent{
+    margin: 0 auto 50px;
+    background: url('../img/barbershopNew-img/line.png') no-repeat, #fff url('../img/barbershopNew-img/content-bg.png');
+    background-position: 50% 50%;
+    padding: 55px 75px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+.indexContent time,
+.indexContent__name,
+.indexContent p{
+    margin-bottom: 5px;
+}
+.indexContent time{
+    text-transform: lowercase;
+}
+.indexContent li{
+    margin-bottom: 30px;
+}
+.indexContent__title{
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 35px;
+}
+.indexContent__left {
+    width: 45%;
+}
+.indexContent__right{
+    width: 35%;
+}
+.gallery__content{
+    margin-bottom: 35px;
+}
+.gallery__content img{
+    border: 10px solid #fff;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+.gallery__btn{
+    display: flex;
+    justify-content: space-between;
+}
+.gallery__btn .btn{
+    font-family: inherit;
+}
+.gallery__btn > button:last-child{
+    margin-right: 0;
+}
+.indexContent__form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.indexContent__form label{
+    width: 45%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+.indexContent__form input{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    background-color: #f9f6f3;
+    margin-top: 10px;
+}
+.indexContent__form input:focus{
+    border-color: #663d15;
+    outline: none;
+}
+::-webkit-input-placeholder {font-weight: bold; opacity: .7}
+::-moz-placeholder          {font-weight: bold; opacity: .7}/* Firefox 19+ */
+:-moz-placeholder           {font-weight: bold; opacity: .7}/* Firefox 18- */
+:-ms-input-placeholder      {font-weight: bold; opacity: .7}
+
+.indexContent p{
+    margin-bottom: 20px;
+}
+.btn{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    background-color: #000;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    width: 45%;
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: .3s;
+    cursor: pointer;
+    font-family: inherit;
+}
+.btn:hover{
+    background-color: #663d15;
+}
+.long{
+    width: 100%;
+    margin-right: 0;
+    font-family: inherit;
+}
+.footer{
+    background: url("../img/barbershopNew-img/footer-bg.jpg");
+    color: #fff;
+    padding: 60px 0 40px;
+    text-align: center;
+}
+.footer>.container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer__contacts{
+    text-align: left;
+}
+.footer__contacts a{
+    color: #fff;
+}
+.footer__social{
+    margin-right: 150px;
+}
+.footer__social p,
+.footer__copyright p{
+    margin-bottom: 20px;
+}
+.footer__copyright a{
+    width: 140px;
+}
+.footer__copyright a:hover{
+    background-color: #fff;
+    color: #000;
+}
+.footer__social .social{
+    font-size: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 150px;
+}
+.social .social__btn{
+    width: 43px;
+    height: 43px;
+    display: block;
+    background: #000 url("../img/barbershopNew-img/sprite.png") no-repeat;
+    transition: background-color 1s;
+}
+.social .social__btn:hover{
+    background-color: #fff;
+}
+.social .social__btn--vk{
+    background-position: 3px -21px ;
+}
+.social .social__btn--vk:hover{
+    background-position: 3px -131px ;
+}
+.social .social__btn--fb{
+    background-position: 4px -57px ;
+}
+.social .social__btn--fb:hover{
+    background-position: 3px -168px ;
+}
+.social .social__btn--inst{
+    background-position: 3px -96px ;
+}
+.social .social__btn--inst:hover{
+    background-position: 3px -205px ;
+}
+
+.modal__maps{
+    position: absolute;
+    left: 80px;
+    right: 80px;
+    bottom: 200px;
+    display: none;
+    box-shadow: 0 30px 50px rgba(0,1,1,.75);
+    border: 7px solid #fff;
+}
+.modal__maps img{
+    width: 100%;
+    height: auto;
+    margin-bottom: -7px;
+}
+.modal__maps .close,
+.modal__popup .close{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: -40px;
+    font-size: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.modal__maps .close:hover,
+.modal__popup .close:hover{
+    opacity: .5;
+}
+.modal__maps .close::before,
+.modal__maps .close::after,
+.modal__popup .close::before,
+.modal__popup .close::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 5px;
+    background-color: #d0d0d0;
+    left: -1px;
+    top: 7px;
+}
+.modal__maps .close::before,
+.modal__popup .close::before{
+    transform: rotate(45deg);
+}
+.modal__maps .close::after,
+.modal__popup .close::after{
+    transform: rotate(-45deg);
+}
+.modal__popup{
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 460px;
+    box-sizing: border-box;
+    background: #fff url('../img/barbershopNew-img/content-bg.png');
+    padding: 50px 80px;
+    display: none;
+    box-shadow: 0 30px 50px rgba(0,1,1,.75);
+}
+.modal__popup h2{
+    font-size: 30px;
+    line-height: 42px;
+    margin: 0 0 20px;
+}
+.modal__popup p{
+    margin-bottom: 10px;
+}
+.modal__popup input[type = 'text'],
+.modal__popup input[type = 'password']{
+    border: 2px solid black;
+    padding: 12px 25px 12px 12px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background: #f9f6f3 url("../img/barbershopNew-img/sprite2.png") no-repeat;
+}
+.modal__popup input[type = 'text']{
+    background-position: 100% 0;
+}
+.modal__popup input[type = 'password']{
+    background-position: 100% -40px;
+}
+.modal__popup .modal__wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+/****************price***************************************/
+.price,
+.catalog{
+    background: #fff url('../img/barbershopNew-img/content-bg.png');
+    padding: 50px 0 25px;
+}
+.price h2{
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 15px;
+}
+.innerNav ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+.innerNav li{
+    position: relative;
+    padding-right: 15px;
+}
+.innerNav li a{
+    color: #000;
+    text-decoration: none;
+}
+.innerNav li:not(:first-child){
+    padding-left: 25px;
+}
+.innerNav li:not(:first-child)::before{
+    content: '';
+    display: block;
+    width: 7px;
+    height: 7px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: rotate(45deg) translateY(-50%);
+}
+.innerNav li:last-child a{
+    color: #aba9a7;
+}
+.price__title{
+    text-align: center;
+}
+.price__title h1{
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    padding: 10px 20px;
+    position: relative;
+    overflow: hidden;
+}
+.price__title h1::before,
+.price__title h1::after{
+    content: '';
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    vertical-align: middle;
+    height: 2px;
+    background-color: #000;
+    z-index: 2;
+}
+.price__title h1::before{
+    margin: 0 0 0 -50%;
+    left: -20px;
+}
+.price__title h1::after{
+    margin: 0 -50% 0 0;
+    right: -20px;
+}
+
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about__item{
+    width: 45%;
+    margin-bottom: 50px;
+}
+.about__item--long{
+    width: 100%;
+}
+.about__item h3{
+    font-size: 30px;
+    line-height: 42px;
+}
+.about__item p{
+    margin: 0;
+}
+.about__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.about__wrapper > p{
+    width: 45%;
+}
+.about__item table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.about__item td{
+    border: 2px solid black;
+    width: 50%;
+    padding: 10px 15px;
+    background-color: #f9f6f3;
+}
+.about__item td:last-child{
+    text-align: center;
+}
+
+/****************catalog***************************************/
+.catalog__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.catalog__form{
+    width: 20%;
+}
+.catalog__form ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.catalog__form fieldset{
+    padding: 0;
+    border: none;
+    margin-bottom: 45px;
+}
+.catalog__form legend{
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+.catalog__form input{
+    display: none;
+}
+.catalog__form label{
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+    display: inline-block;
+    padding-left: 40px;
+    position: relative;
+    cursor: pointer;
+}
+.catalog__form input[type='checkbox'] ~ label::before,
+.catalog__form input[type='radio'] ~ label::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-color: #f9f6f3;
+    border: 2px solid #000;
+}
+.catalog__form input[type='checkbox']:checked ~ label::after{
+    content: url("../img/barbershopNew-img/checked.png");
+    position: absolute;
+    left: 4px;
+    top: 1.5px;
+}
+.catalog__form input[type='radio'] ~ label::before{
+    border-radius: 50%;
+}
+.catalog__form input[type='radio']:checked ~ label::after{
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    left: 6.5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.catalog__form .btn{
+    width: 65%;
+}
+.catalog__shop{
+    width: 75%;
+}
+.catalog__items{
+    display: flex;
+    flex-wrap: wrap;
+}
+.catalog__item{
+    width: 31%;
+    box-shadow: 0 0 15px rgba(0,1,1,.2);
+    margin: 0 3.5% 20px 0;
+    position: relative;
+    padding-bottom: 45px;
+}
+.catalog__item:nth-child(3n){
+    margin-right: 0;
+}
+.catalog__item:hover{
+    box-shadow: 3px 4px 25px rgba(0,1,1,.3);
+}
+.catalog__item p{
+    margin: 0 0 10px;
+}
+.catalog__item img{
+    width: 100%;
+    height: auto;
+}
+.item__description{
+    padding: 15px;
+}
+.item__priceBuy{
+    display: flex;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+}
+.item__priceBuy span{
+    background-color: #e5e5e5;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    width: 60%;
+}
+.item__priceBuy a.btn{
+    margin-right: 0;
+}
+.catalog__pagination{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.catalog__pagination li{
+    display: inline-block;
+    width: 42px;
+    background-color: #000;
+    text-align: center;
+    margin-right: 5px;
+}
+.catalog__pagination li:hover{
+    background-color: #663d15;
+}
+.catalog__pagination li a.active{
+    background-color: #fff;
+    color: #000000;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.catalog__pagination a{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 0;
+}
+.catalog .hide{
+    display: none;
+}
+.catalog .show{
+    display: block;
+}
+
+@media (min-width: 0) and (max-width: 700px){
+    .navMain li:not(:last-child),
+    .userBlock a{
+        display: none;
+    }
+    .navMain li:first-child{
+        display: inline-block;
+    }
+    .navMain{
+        text-align: center;
+    }
+    .headerMain .icon{
+        display: block;
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+    }
+    .headerMain.responsive{
+        position: relative;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .headerMain.responsive li{
+        display: inline;
+    }
+    .headerMain.responsive a{
+        display: block;
+    }
+    .responsive .navMain__wrapper{
+        display: block;
+    }
+    .responsive .container{
+        display: block;
+    }
+    .responsive .userBlock{
+        margin: auto;
+    }
+
+    .features__item{
+        width: 90%;
+        margin: auto;
+    }
+
+    main{
+        padding: 60px 0 30px;
+    }
+    .indexContent{
+        padding: 10px 20px;
+        background: #fff url('../img/barbershopNew-img/content-bg.png');
+    }
+    .indexContent__left,
+    .indexContent__right{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .footer{
+        margin: auto;
+    }
+    .footer__copyright,
+    .footer__contacts,
+    .footer__social{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .footer__social .social{
+        margin: auto;
+    }
+
+    .modal__popup{
+        width: 300px;
+        height: auto;
+        padding: 20px;
+    }
+
+    /*************price-media**********************/
+
+    .headerMain{
+        height: 70px;
+        background-color: #000;
+    }
+    .headerMain.responsive{
+        height: auto;
+    }
+    .headerMain a.active::after{
+        display: none;
+    }
+    .price{
+        padding: 15px;
+    }
+    .price h1{
+        font-size: 38px;
+        line-height: 42px;
+    }
+    .price h1::before,
+    .price h1::after{
+        display: none;
+    }
+    .price h2{
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    .about__item{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .about h3{
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    /*************catalog-media**********************/
+    .catalog{
+        padding: 0 15px;
+    }
+    .catalog__form,
+    .catalog__shop,
+    .catalog__items,
+    .catalog__item{
+        width: 100%;
+    }
+    .catalog__form{
+        margin-bottom: 20px;
+    }
+    .catalog__item{
+        margin-right: 0;
+    }
+    .catalog__pagination{
+        margin-bottom: 30px;
+    }
+}
+@media (min-width: 701px) and (max-width: 950px) {
+    .container{
+        max-width: 700px;
+    }
+    .footer__social{
+        margin-right: 0;
+    }
+    .footer>.container{
+        flex-wrap: nowrap;
+    }
+}
+@media (min-width: 951px) and (max-width: 1100px) {
+    .container{
+        max-width: 900px;
+    }
+}
