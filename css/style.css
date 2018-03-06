@@ -65,6 +65,7 @@ body{
 .portfolio{
     text-align: center;
     padding: 60px 15px 30px;
+    background: linear-gradient(#fff, #000);
 }
 .portfolio__title{
     margin-bottom: 100px;
@@ -100,7 +101,7 @@ body{
 
 footer{
     text-align: center;
-    background-color: lightseagreen;
+    background-color: black;
     color: #e4e4e4;
     padding: 40px 0;
     font-size: 22px;
@@ -124,6 +125,10 @@ footer{
 .footer__social a:hover{
     background-color: #e4e4e4;
     color: #646464;
+}
+.footer__phone{
+    text-decoration: none;
+    color: #ffffff;
 }
 .offer-btn{
     color: #e4e4e4;
