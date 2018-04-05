@@ -74,10 +74,102 @@ body{
     border-left: 2px solid #fff;
 }
 
+.skills{
+    max-width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 100px 0 20px;
+}
+.skills__item{
+    width: 48%;
+}
+.skills__title{
+    width: 100%;
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 40px;
+    color: #333333;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+.skills__progress {
+    height: 12px;
+    border: 1px solid #009dda;
+    padding: 2px;
+    position: relative;
+    margin-left: 60px;
+}
+.skills__progress::before{
+    content: '';
+    position: absolute;
+    left: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url("../img/sprite.png") no-repeat;
+    width: 52px;
+    height: 52px;
+}
+.skills__html .skills__progress::before{
+    background-position: -5px -5px;
+}
+.skills__css .skills__progress::before{
+    background-position: 2px -245px;
+}
+.skills__js .skills__progress::before{
+    background-position: -5px -486px;
+}
+.skills__photoshop .skills__progress::before{
+    background-position: 0 -48px;
+    background-size: 50px;
+}
+.skills__git .skills__progress::before{
+    background-position: 0 -246px;
+    background-size: 50px;
+}
+.skills__gulp .skills__progress::before{
+    background-position: -5px -366px;
+}
+.skills__bootstrap .skills__progress::before{
+    background-position: -5px -185px;
+}
+.skills__jquery .skills__progress::before{
+    background-position: -5px -424px;
+}
+.skills__wp .skills__progress::before{
+    background-position: -5px -125px;
+}
+.skills__less .skills__progress::before{
+    background-position: -5px -544px;
+}
+.skills__line {
+    height: 6px;
+    background: linear-gradient(90deg, red, green 80%);
+    width: 0;
+    transition: 1s;
+}
+.skills__name {
+    display: flex;
+    justify-content: space-around;
+    font-size: 13px;
+    line-height: 20px;
+    color: #444444;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    text-transform: lowercase;
+}
+.skills__item {
+    margin-bottom: 35px;
+}
+
+.wrapper{
+    background: linear-gradient(#fff, #000);
+}
 .portfolio{
     text-align: center;
     padding: 60px 15px 30px;
-    background: linear-gradient(#fff, #000);
     overflow: hidden;
 }
 .portfolio__work{
@@ -254,6 +346,13 @@ footer{
     .footer__small,
     .footer__social{
         margin-bottom: 40px;
+    }
+    .skills__item{
+        width: 100%;
+    }
+    .skills__title{
+        font-size: 24px;
+        line-height: 30px;
     }
 }
 
@@ -521,5 +620,11 @@ Transition Layer
         -ms-transform: translateY(-50%) translateX(-2%);
         -o-transform: translateY(-50%) translateX(-2%);
         transform: translateY(-50%) translateX(-2%);
+    }
+}
+
+@media (max-width: 1199px) {
+    .skills{
+        padding: 80px 30px 20px;
     }
 }
