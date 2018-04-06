@@ -14,6 +14,9 @@ function showProgress() {
         setTimeout(function () {
             [...progresses].map(function (item) {
                 item.style.width = item.parentNode.previousElementSibling.querySelector('span').textContent;
+                if(parseInt(item.parentNode.previousElementSibling.querySelector('span').textContent) >= 70){
+                    item.parentNode.previousElementSibling.querySelector('span').style.color = 'green';
+                }
             })
         }, 500);
         window.removeEventListener('scroll', showProgress);
