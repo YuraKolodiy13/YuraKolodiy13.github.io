@@ -164,7 +164,7 @@ body{
 }
 .skills__name span{
     padding-left: 30px;
-    color: darkgreen;
+    color: red;
 }
 .skills__item {
     margin-bottom: 35px;
