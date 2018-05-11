@@ -26,6 +26,8 @@ function bounce(timeFraction) {
     }
 }
 
+
+
 let progresses = document.querySelectorAll('.skills__line');
 let progress = document.querySelector('.skills');
 
@@ -79,19 +81,3 @@ $(function () {
         ]
     });
 });
-
-
-////
-// function updateProgress(num1, num2){
-//     var percent = Math.ceil( num1 / num2 * 100 ) + '%';
-//     document.querySelector('.bar').style.width = percent;
-//     console.log(percent);
-// }
-//
-// // var headerHeight = document.querySelector('.header').getBoundingClientRect().height;
-//
-// window.addEventListener('scroll', function(){
-//     var top = window.scrollY;
-//     var height = document.querySelector('main').clientHeight;
-//     updateProgress(top, height);
-// });
