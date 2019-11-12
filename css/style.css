@@ -197,6 +197,7 @@ body{
     padding: 60px 15px 30px;
     overflow: hidden;
 }
+
 .portfolio__work{
     margin-bottom: 50px;
 }
@@ -290,6 +291,58 @@ body{
 .portfolio a:focus{
     text-decoration: none;
     outline: none;
+}
+
+.hobbies{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.hobbies__title{
+    font-size: 36px;
+    line-height: 40px;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 20px #fff;
+    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+.hobbies__subtitle{
+    font-size: 18px;
+    line-height: 28px;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 10px #fff;
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    padding-left: 50px;
+}
+.hobbies__item{
+    /*padding-left: 50px;*/
+    display: flex;
+    justify-content: center;
+}
+.hobbies__subtitle::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+}
+.hobbies__football::before{
+    background: url('../img/football.png') center no-repeat;
+    background-size: cover;
+}
+.hobbies__hiking::before{
+    background: url('../img/hiking.png') center no-repeat;
+    background-size: contain;
+}
+.hobbies__ping-pong::before{
+    background: url('../img/ping-pong.png') center no-repeat;
+    background-size: cover;
 }
 
 footer{
