@@ -284,7 +284,7 @@ body{
     padding: 5px;
     box-shadow: 0 0 20px #fff;
 }
-.portfolio__work:hover a{
+.portfolio__img:hover a{
     transform: translateY(-200%);
     opacity: 1;
 }
@@ -464,7 +464,7 @@ footer{
 
 @media (max-width: 767px) {
     .portfolio__img{
-        overflow: hidden;
+        /*overflow: hidden;*/
     }
     .portfolio__img:hover{
         transform: scale(1.1);
@@ -479,7 +479,7 @@ footer{
     .overlay{
         opacity: 0;
         left: 50%;
-        top: 100%;
+        top: 0;
         bottom: -1px;
         transform: translateX(-50%);
     }
